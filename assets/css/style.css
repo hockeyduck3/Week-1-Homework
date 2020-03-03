@@ -1,3 +1,4 @@
+/* Moved the text-decoration to here */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,22 +11,38 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Since both the header and footer used the same font's I combined them here */
 header, footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Condensed the CSS for color into one */
+a, .benefits, .content, header {
+    color: #fff;
 }
 
 header {
     padding: 20px;
     background-color: #2a607c;
-    color: #fff;
 }
 
-header h1, li{
+/* Condensed the CSS for inline-block */
+header h1, li, .content{
     display: inline-block;
 }
 
 header h1 {
     font-size: 48px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Changed this tag to just li since that is all that needs to be targeted */
@@ -48,11 +65,6 @@ nav {
 
 /* Removed the p tag since each element already has their own font size */
 
-
-a, .benefits, .content {
-    color: #fff;
-}
-
 .meetingImg {
     height: 800px;
     width: 100%;
@@ -73,7 +85,6 @@ a, .benefits, .content {
 
 .content {
     width: 75%;
-    display: inline-block;
     margin-left: 20px;
 }
 
@@ -87,14 +98,9 @@ a, .benefits, .content {
     background-color: #2589bd;
 }
 
-/* Condensed the CSS in these parts*/
+/* Condensed the CSS here */
 .benefit-lead, .benefit-brand, .benefit-cost{
     margin-bottom: 23px;
-}
-
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 .benefits img {
@@ -103,7 +109,8 @@ h3 {
     max-width: 150px;
 }
 
-#search-engine-optimization, #online-reputation-management, #social-media-marketing {
+/* Instead of targeting multiple id's I instead chose to target the article which gives the same result */
+article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -112,11 +119,6 @@ h3 {
 
 .content img{
     max-height: 200px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 footer {
