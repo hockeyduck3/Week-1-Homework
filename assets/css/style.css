@@ -1,4 +1,4 @@
-/* Moved the text-decoration to here */
+/* Moved the text-decoration here */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,48 +11,34 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Since both the header and footer used the same font's I combined them here */
 header, footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* Condensed the CSS for color into one */
-a, .benefits, .content, header {
-    color: #fff;
 }
 
 header {
     padding: 20px;
     background-color: #2a607c;
+    color: #fff;
 }
 
-/* Condensed the CSS for inline-block */
-header h1, li, .content{
+/* Changed this from ".header h1 .seo" to just ".seo" since the class is all that is needed to identify it and moved it closer to the top */
+.seo {
+    color: #d9dcd6;
+}
+
+/* Took out the header tag in both of these tags since there is only one h1 tag in the html. Also added margin-left to this to help reduce the CSS */
+h1, li{
     display: inline-block;
+    margin-left: 25px;
 }
 
-header h1 {
+h1 {
     font-size: 48px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-h3 {
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 /* Changed this tag to just li since that is all that needs to be targeted */
 li {
     margin-left: 25px;
-}
-
-/* Changed this from .header h1 .seo to just .seo since the class is all that is needed to identify it */
-.seo {
-    color: #d9dcd6;
 }
 
 /* Changed this to just nav since the class doesn't need to be specified */
@@ -63,14 +49,51 @@ nav {
     font-size: 20px;
 }
 
-/* Removed the p tag since each element already has their own font size */
+/* Moved this closer to the top  */
+.content img {
+    height: 200px;
+}
 
+/* Removed the height from the CSS here since it had no effect also moved this closer to the top so it can load faster */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    background-color: #2589bd;
+}
+
+/* Removed both background-size and background-position since height and width are already set */
 .meetingImg {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
+}
+
+/* Changed this tag to just article instead of target each individual id */
+article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+}
+
+/* Moved h2 and h3 up to the top to keep it close with the other h tags */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Removed the p tag since each element already has their own font size */
+
+a, .benefits, .content {
+    color: #fff;
 }
 
 .float-left {
@@ -85,20 +108,11 @@ nav {
 
 .content {
     width: 75%;
+    display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    background-color: #2589bd;
-}
-
-/* Condensed the CSS here */
+/* Condensed the CSS here*/
 .benefit-lead, .benefit-brand, .benefit-cost{
     margin-bottom: 23px;
 }
@@ -107,18 +121,6 @@ nav {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-/* Instead of targeting multiple id's I instead chose to target the article which gives the same result */
-article {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    background-color: #0072bb;
-}
-
-.content img{
-    max-height: 200px;
 }
 
 footer {
