@@ -49,13 +49,8 @@ nav {
     font-size: 20px;
 }
 
-/* Moved this closer to the top  */
-.content img {
-    height: 200px;
-}
-
-/* Removed the height from the CSS here since it had no effect also moved this closer to the top so it can load faster */
-.benefits {
+/* Removed the height from the CSS here since it had no effect also I changed it from the class to aside. */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -69,6 +64,18 @@ nav {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
+}
+
+/* Moved this closer to the top  */
+.content img {
+    height: 200px;
+}
+
+/* Changed this from the class to aside, and I moved it closer to the top */
+aside img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 /* Changed this tag to just article instead of target each individual id */
@@ -92,7 +99,8 @@ h3 {
 
 /* Removed the p tag since each element already has their own font size */
 
-a, .benefits, .content {
+/* Changed this from targeting to classes to targeting the main and aside tags */
+a, main, aside {
     color: #fff;
 }
 
@@ -106,7 +114,8 @@ a, .benefits, .content {
     margin-left: 25px;
 }
 
-.content {
+/* Changed this from targeting the class to targeting the main tag */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -115,12 +124,6 @@ a, .benefits, .content {
 /* Condensed the CSS here*/
 .benefit-lead, .benefit-brand, .benefit-cost{
     margin-bottom: 23px;
-}
-
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 footer {
