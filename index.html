@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Changed the title to Horiseon | Homepage -->
     <title>Horiseon | Homepage</title>
 </head>
 
 <!-- Spaced out some of the HTML so it'll hopefully be easier to read -->
+
 <body>
     <!-- Removed the div and class "header", and changed this to a header tag. -->
     <header>
@@ -29,10 +31,10 @@
         </nav>
     </header>
 
-    <!-- Changed this from a div into an img so an alt could be added to the image. And changed the class name from "hero" to "meetingImg". -->
+    <!-- Changed this from a "div" into an "img" so an alt could be added to the image. And changed the class name from "hero" to "meetingImg". -->
     <img src="./assets/images/digital-marketing-meeting.jpg" alt="Employees in a meeting." class="meetingImg"/>
     
-    <!-- Removed the class on all 3 of these divs since they all already have id's. -->
+    <!-- Changed the div's to article's and removed the class on all 3 of these articles since they all already have id's. -->
     <main class="content">
         <!-- This article was missing its id which caused the coresponding link in the nav to be broken. -->
         <article id="search-engine-optimization">
@@ -66,37 +68,38 @@
         </article>
     </main>
 
+    <!-- Change the div tags in this section to figure tags, and changed the p tags to figcaption tags -->
     <aside class="benefits">
-        <div class="benefit-lead">
+        <figure class="benefit-lead">
             <h3>Lead Generation</h3>
 
             <img src="./assets/images/lead-generation.png" alt="Cog going into a funnel and turning into cash"/>
 
-            <p>
+            <figcaption>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
+            </figcaption>
+        </figure>
 
-        <div class="benefit-brand">
+        <figure class="benefit-brand">
             <h3>Brand Awareness</h3>
 
             <img src="./assets/images/brand-awareness.png" alt="Worker with an illuminated light bulb head"/>
 
-            <p>
+            <figcaption>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
+            </figcaption>
+        </figure>
         
-        <div class="benefit-cost">
+        <figure class="benefit-cost">
             <h3>Cost Management</h3>
 
             <!-- This img tag was not self closing but instead looked like a regular tag -->
             <img src="./assets/images/cost-management.png" alt="Cog and money"/>
 
-            <p>
+            <figcaption>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
+            </figcaption>
+        </figure>
     </aside>
 
     <footer>
